@@ -1,8 +1,6 @@
-﻿using ImGuiNET;
-using System.Numerics;
-using Dalamud.Interface;
+﻿using System.Numerics;
 using Dalamud.Interface.Windowing;
-using System.Linq;
+using Dalamud.Bindings.ImGui;
 using Dalamud.Interface.Utility;
 
 namespace HighFpsPhysicsPlugin;
