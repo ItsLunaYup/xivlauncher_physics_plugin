@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Authors>ItsLunaYup</Authors>
-    <Version>9.0.0.0</Version>
+    <Version>9.0.0.1</Version>
     <Description>Simple plugin that divides the physics' refresh rate, making physics (kinda) work at high fps.</Description>
     <PackageProjectUrl>https://github.com/ItsLunaYup/xivlauncher_physics_plugin</PackageProjectUrl>
 
