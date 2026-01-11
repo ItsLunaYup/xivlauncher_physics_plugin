@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
 using Dalamud.Interface.Windowing;
 using Dalamud.Bindings.ImGui;
 using Dalamud.Interface.Utility;
@@ -66,7 +67,7 @@ internal class ConfigurationWindow : Window
         var target_fps = Service.Settings.TargetFPS;
         if (ImGui.SliderFloat("Physics FPS", ref target_fps, 1, 120))
         {
-            Service.Settings.TargetFPS = target_fps;
+            Service.Settings.TargetFPS = Math.Clamp(target_fps, 1, 240);
             Service.Settings.Save();
             Service.PhysicsModification.RecalculateExpectedFrametime();
         }
